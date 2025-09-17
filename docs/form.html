@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form.html</title>
+    <link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css" />
+    <style>
+      body {
+        margin: auto;
+        max-width: 768px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>webec - Week 01: form.html</h1>
+    <br />
+    <h2>The Assignment:</h2>
+    <ul>
+      <li>create an HTML page with a form</li>
+      <li>make the form action sending an email to dierk.koenig@fhnw.ch</li>
+      <li>on the web, find the resource about HTML that you like best</li>
+      <li>
+        use the form to submit a link to that resource and a description on why
+        you like it
+      </li>
+    </ul>
+    <br />
+    <h2>My Solution:</h2>
+    <br />
+    <form
+      action="mailto:dierk.koenig@fhnw.ch?subject=Form Submission from https://tbuserdev.github.io/fhnw-webec/form.html"
+      method="post"
+      enctype="text/plain"
+    >
+      <label for="name">My Name is:</label><br />
+      <input type="text" id="name" name="name" />
+      <br />
+      <br />
+
+      <label for="link">My favourite HTML resource is:</label><br />
+      <input type="url" id="link" name="link" />
+      <br />
+      <br />
+
+      <label for="reason">I like this resource because:</label><br />
+      <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+      <br />
+      <br />
+
+      <input
+        type="submit"
+        value="Send an Email with this info to dierk.koenig@fhnw.ch*"
+      />
+      <p>
+        <i>* This is a client-side only solution using your email program.</i>
+      </p>
+    </form>
+  </body>
+</html>
