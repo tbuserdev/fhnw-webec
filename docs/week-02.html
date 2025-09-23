@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Storybook for the Web Engineering Module</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        background: #ffff00;
+      }
+      body {
+        background-color: white;
+        color: black;
+        margin: 0;
+        font-family: "Satoshi", sans-serif;
+        font-size: 1.1em;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+      header,
+      footer {
+        background: #ffff00;
+        color: black;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      header {
+        border-bottom: 6px solid black;
+        margin-bottom: 2em;
+      }
+      footer {
+        border-top: 6px solid black;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto 2em auto;
+        padding: 0 1em;
+      }
+
+      h1,
+      h2 {
+        color: white;
+        border: 4px solid black;
+        box-shadow: 6px 6px 0 black;
+        padding: 0.3em 0.7em;
+        margin-bottom: 0.7em;
+        letter-spacing: 1px;
+        width: fit-content;
+        transition: transform 0.2s;
+      }
+      h1 {
+        font-size: 1.5em;
+        font-weight: 900;
+        background: #ff3333;
+        text-transform: uppercase;
+        transform: rotate(-0.25deg);
+      }
+      h2 {
+        font-size: 1.125em;
+        font-weight: 700;
+        background: #0166ff;
+        transform: rotate(0.25deg);
+      }
+      a {
+        color: #0166ff;
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: 2px solid #0166ff;
+      }
+      table {
+        width: 100%;
+        padding: 0;
+        border-collapse: collapse;
+        box-shadow: 6px 6px 0 black;
+      }
+      thead th {
+        background: #00ff00;
+        color: black;
+        border: 4px solid black;
+        padding: 0.6em 0.9em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+      tbody td {
+        padding: 0.6em 0.9em;
+        border: 4px solid black;
+      }
+      tbody td:first-child {
+        font-weight: 600;
+      }
+      tbody td:nth-child(2) {
+        text-align: center;
+        font-weight: 900;
+      }
+      caption {
+        caption-side: bottom;
+        border: 3px solid black;
+        box-shadow: 3px 3px 0 black;
+        padding: 0.5em 1em;
+        margin: 1em auto;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transform: rotate(0.3deg);
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      p:last-of-type {
+        margin-bottom: 2.5em;
+      }
+      code {
+        background: #ccc;
+        height: fit-content;
+        width: fit-content;
+        padding: 0.1em 0.3em;
+        border: 2px solid black;
+        box-shadow: 1px 1px 0 black;
+        font-weight: 600;
+        margin-right: 0.2em;
+      }
+      dfn,
+      abbr {
+        border-bottom: 2px dashed black;
+        cursor: help;
+      }
+      abbr {
+        text-decoration: none;
+      }
+      ul {
+        padding-left: 1em;
+      }
+      li {
+        list-style: none;
+        &::before {
+          content: "☐";
+          font-size: 1.2em;
+        }
+      }
+      ::selection {
+        background: #ff0;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <dfn title="Drehbuch">Storybook</dfn> for the Web Engineering Module
+    </header>
+    <main>
+      <section id="context">
+        <h1>Module delivery mode</h1>
+        <p>
+          This installment of the <dfn title="WebEngineering">webeC</dfn> module
+          is delivered in the fall semester of 2025.
+        </p>
+      </section>
+      <section id="content">
+        <h1>Delivery dates and examination details</h1>
+        <article>
+          <h2>Overview</h2>
+          <table>
+            <caption>
+              Delivery dates
+            </caption>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>#</th>
+                <th>Topic</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mi, 17.09.25<br />08:15 - 09:00<br />5.2B51</td>
+                <td>1</td>
+                <td>Intro (verkürzt), HTML</td>
+              </tr>
+              <tr>
+                <td>Mi, 24.09.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>2</td>
+                <td>CSS Basics</td>
+              </tr>
+              <tr>
+                <td>Mi, 01.10.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>3</td>
+                <td>DIY Server</td>
+              </tr>
+              <tr>
+                <td>Mi, 08.10.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>4</td>
+                <td>DIY Server Side Apps</td>
+              </tr>
+              <tr>
+                <td>Mi, 15.10.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>5</td>
+                <td>Grails Setup, GSP Views</td>
+              </tr>
+              <tr>
+                <td>Mi, 22.10.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>6</td>
+                <td>Web MVC</td>
+              </tr>
+              <tr>
+                <td>Mi, 29.10.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>7</td>
+                <td>Domain Model, DB</td>
+              </tr>
+              <tr>
+                <td>Mi, 05.11.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>8</td>
+                <td>Testing</td>
+              </tr>
+              <tr>
+                <td>Mi, 12.11.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>9</td>
+                <td>Security, Multi-User</td>
+              </tr>
+              <tr>
+                <td>Mi, 19.11.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>10</td>
+                <td>Start Bewertete Übung (Anwesenheitspflicht)</td>
+              </tr>
+              <tr>
+                <td>Mi, 26.11.25<br />08:15 - 11:00<br />5.3C06</td>
+                <td>11</td>
+                <td>Übungsanlass</td>
+              </tr>
+              <tr>
+                <td>Mi, 03.12.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>12</td>
+                <td>Übungsanlass</td>
+              </tr>
+              <tr>
+                <td>Mi, 10.12.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>13</td>
+                <td>Übungsanlass</td>
+              </tr>
+              <tr>
+                <td>Mi, 17.12.25<br />08:15 - 11:00<br />5.2B51</td>
+                <td>14</td>
+                <td>Abgabe</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article>
+          <h2>Total Effort</h2>
+          <p>Classroom lectures add up to <code>14 * 3h = 42h</code>.</p>
+          <p>
+            The exercise for the continuous assessment grade takes
+            <code>4 * 5h = 20h</code>.
+          </p>
+          <p>This makes a total of <code>62h</code>.</p>
+        </article>
+        <article id="criteria">
+          <h2>Passing criteria</h2>
+          <ul>
+            <li>
+              You have to attend the exercise preparation event.
+              (Anwesenheitspflicht)
+            </li>
+            <li>
+              You have to do the exercise and deliver before the deadline.
+            </li>
+          </ul>
+          <p>
+            Your exercise will determine your
+            <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr
+            >.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <address>
+        Dierk König, 5.2B16,
+        <a href="mailto:dierk.koenig@fhnw.ch">dierk.koenig@fhnw.ch</a>
+      </address>
+    </footer>
+  </body>
+</html>
